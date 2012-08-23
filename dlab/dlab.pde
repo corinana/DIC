@@ -3,7 +3,7 @@ void setup( )
   size(400, 400);
   background(240,255,240);
   smooth();
-  // don't show where control points are
+
   fill(0);
   stroke(0);
   beginShape();
