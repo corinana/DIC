@@ -3,7 +3,7 @@ void setup() {
 }
 
 void draw() {
-  background(175,238,238);
+  background(240,255,240);
     smooth();
     noFill();
     stroke(100);
@@ -20,10 +20,18 @@ void draw() {
     bezier(147,165,170,127,214,127,214,127);
   endShape();
 
- bezier(197,155,251,155,248,251,248,251);
- bezier(248,251,248,248,248,352,197,352);
- bezier(197,352,149,352,149,251,149,251);
- bezier(149,251,149,196,165,155,197,155);
+  fill(255,255,200);
+  stroke(100);
+  beginShape();
+  vertex(197,155); // first point
+  bezierVertex(251, 155, 248, 251, 248, 251);
+  vertex(248,251);
+  bezierVertex(248, 248, 248, 352, 197, 352);
+  vertex(197,352);
+  bezierVertex(149, 352, 149, 251, 149, 251);
+  vertex(149,251);
+  bezierVertex(149, 196, 165, 155, 197, 155);  
+  endShape();
 
 
 }
