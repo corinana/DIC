@@ -4,8 +4,9 @@ void setup( )
   background(240,255,240);
   smooth();
 
-  fill(0);
-  stroke(0);
+
+  fill(200);
+  noStroke();
   beginShape();
   vertex(214,127); // first point
   bezierVertex(302, 127, 302, 251, 302, 251);
@@ -24,7 +25,7 @@ void setup( )
   endShape();
   
   fill(240,255,240);
-  stroke(0);
+  noStroke();
   beginShape();
   vertex(197,155); // first point
   bezierVertex(251, 155, 248, 251, 248, 251);
