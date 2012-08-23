@@ -10,18 +10,27 @@ void draw() {
     strokeWeight(2);
     translate(-5,-10);
 
+  fill(0);
+  stroke(0);
   beginShape();
-    bezier(214,127,302,127,302,251,302,251);
-    bezier(302,251,302,372,204,372,197,372);
-    bezier(197,372,97,372,97,251,97,251);
-    line(97,251,97,27);
-    line(97,27,147,27);
-    line(147,27,147,165);
-    bezier(147,165,170,127,214,127,214,127);
+  vertex(214,127); // first point
+  bezierVertex(302, 127, 302, 251, 302, 251);
+  vertex(302,251);
+  bezierVertex(302, 372, 204, 372, 197, 372);
+  vertex(197,372);
+  bezierVertex(97, 372, 97, 251, 97, 251);
+  vertex(97,251);
+  vertex(97,27);
+  vertex(97,27);
+  vertex(147,27);
+  vertex(147,27);
+  vertex(147,165);
+  vertex(147,165);
+  bezierVertex(170, 127, 214, 127, 214, 127);
   endShape();
 
-  fill(255,255,200);
-  stroke(100);
+  fill(240,255,240);
+  stroke(0);
   beginShape();
   vertex(197,155); // first point
   bezierVertex(251, 155, 248, 251, 248, 251);
