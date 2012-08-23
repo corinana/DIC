@@ -35,7 +35,8 @@ void setup( )
   vertex(149,251);
   bezierVertex(149, 196, 165, 155, 197, 155);  
   endShape();
-  
+  save("dlab.jpg");
+
 }
 
 
